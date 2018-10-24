@@ -1,0 +1,235 @@
+/*HEADER*/
+#jd-headerWrapper,
+#jd-grid-columns {
+    position: relative;
+    padding: 0;
+}
+
+#jd-grid-columns a:hover {
+    text-decoration: none;
+}
+
+
+#jd-grid-columns .jd-itemsMapBox {
+    margin: 25px 0;
+    border: 1px solid #DDD;
+}
+
+
+@media screen and (max-width : 960px) {
+    #jd-itemsMap {
+       position: relative!important;
+       width: 100%!important;
+    }
+}
+
+#jd-grid-columns .jd-box {
+    cursor: pointer;
+    position: relative;
+}
+
+#jd-grid-columns .jd-boxInner {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+#jd-grid-columns .jd-highlight {
+    border: 5px solid #000;
+}
+
+#jd-grid-columns .jd-featured {
+    color: #fff;
+    font-weight: 700;
+    left: -44px;
+    padding: 4px 45px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 16px;
+    transform: rotate(-45deg);
+    background: #ee413c;
+    z-index: 10
+}
+
+#jd-grid-columns .jd-title-premium h2 {
+    color: #fff!important
+}
+
+#jd-grid-columns .jd-boxInner:hover .jd-item-box-category {
+    opacity: 0;
+}
+
+#jd-grid-columns .jd-item-box-category {
+    top: 0;
+    right: 40px;
+    padding: 5px 10px;
+    background: #fff;
+    transition: all 0.5s ease 0s;
+    border-bottom: 2px solid #ee413c;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+#jd-grid-columns .jd-boxInner:hover .jd-item-box-details {
+    opacity: 1;
+}
+
+#jd-grid-columns .jd-item-box-details {
+    top: 40%;
+    margin: auto;
+    transition: all 1s ease 0s;
+    opacity: 0;
+    text-align: center;
+    width: 100%;
+}
+
+#jd-grid-columns .jd-item-box-details a {
+    padding:8px 10px;
+    border: 1px solid #FFF;
+    text-transform: lowercase;
+    border: 1px solid #FFF;
+    color: #FFF;
+}
+
+#jd-grid-columns .jd-item-box-details a:hover {
+    background: #FFF;
+    color: #333;
+} 
+
+#jd-grid-columns .jd-item-box-logo {
+    bottom: 110px;
+    right: 40px;
+    border-radius: 100%;
+    background: #f1f1f1;
+    padding: 3px;
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    color: #ccc;
+}
+
+#jd-grid-columns .jd-item-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    overflow: hidden;
+    background: #FFF;
+}
+
+#jd-grid-columns .jd-item-logo img {
+    width: 50px;
+}
+
+#jd-grid-columns .jd-item-box-address {
+    bottom: 50px;
+    height: 80px;
+    left: 0;
+    width: 100%;
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(28,28,28,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(28,28,28,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(28,28,28,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(28,28,28,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(28,28,28,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(28,28,28,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#1c1c1c',GradientType=0 ); /* IE6-9 */
+}
+
+#jd-grid-columns .jd-item-address {
+    color: #fff;
+    text-transform: uppercase;
+    height: 50px;
+    line-height: 50px;
+    bottom: 0;
+}
+
+#jd-grid-columns .jd-boxInner:hover .jd-item-box-cover {
+    opacity: 0.8;
+    width: 100%;
+    padding-left: 10px;
+}
+
+#jd-grid-columns .jd-item-box-cover {
+    background: #000;
+    transition: all 0.5s ease 0s;
+    opacity: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+}
+
+#jd-grid-columns .jd-boxInner:hover .jd-item-box-score {
+    opacity: 1;
+}
+
+#jd-grid-columns .jd-item-box-score {
+    top: 15px;
+    left: 8px;
+    font-size: 16px;
+}
+
+#jd-grid-columns .jd-item-score {
+   top: 22px; 
+   left: 16px;
+}
+
+#jd-grid-columns .jd-item-title {
+    background: #fff;
+    bottom: 0;
+    height: 50px;
+    left: 0;
+    line-height: 50px;
+    width: 100%;
+}
+
+#jd-grid-columns .jd-item-title h2 {
+     font-size: 18px;
+     margin: 0;
+     font-weight: normal;
+     line-height: 50px;
+}
+
+#jd-grid-columns .jd-title-premium {
+    color: #fff;
+    background: #ee413c;
+}
+
+
+@media only screen and (max-width : 480px) {
+
+    #jd-grid-columns .jd-item-body {
+        padding: 5px;
+    }
+}
+
+
+@media only screen and (max-width : 800px) {
+    .cd-form-width-small {
+        width: 100px;
+    }
+    .cd-button-small {
+        padding: 0 5px;
+    }
+}
+
+
+@media only screen and (max-width : 480px) {
+
+    #jd-grid-columns  .jd-itemDescrBox {
+        font-size: 11px;
+    }
+    #jd-grid-columns .jd-toolbar-right {
+        margin-top: 10px;
+        text-align: center
+    }
+}
+
+
+.jc-powered {
+    text-align: right!important;
+    margin-right: 10%;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_JOMDIRECTORY_PRODUCTS_LAYOUT_DEFAULT">
+        <help
+                key="COM_JOMDIRECTORY_LAYOUT_DEFAULT"
+        />
+        <message>
+
+        </message>
+    </layout>
+
+    <!-- Add fields to the request variables for the layout. -->
+    <fields name="request">
+        <fieldset name="request">
+            <field name="categories_id" type="jdcategory"
+                   label="JCATEGORY" description="JFIELD_CATEGORY_DESC" extension="com_jomdirectory.jomdirectory"
+                   textall="COM_JOMDIRECTORY_GENERICLIST_BLANK_SELECT"
+                   class="inputbox" lang="all" required="false" blank="1"/>
+
+            <field name="categories_address_id" lang="all" type="jdaddress" required="false"
+                   label="COM_JOMDIRECTORY_FIELD_ADDRESS" description="COM_JOMDIRECTORY_FIELD_ADDRESS_DESC"
+                   class="inputbox"/>
+
+
+        </fieldset>
+    </fields>
+
+
+    <!-- Add fields to the parameters object for the layout. -->
+    <fields name="params">
+        <fieldset name="basic" label="COM_JOMDIRECTORY_MENU_PARAMS">
+
+            <field id="global_option" name="global_option" type="radio" label="COM_JOMDIRECTORY_CFG_USE_GLOBAL" default="1" class="btn-group">
+                <option value="0">NO</option>
+                <option value="1">YES</option>
+            </field>
+            <field name="lay" type="spacer" class="text" label="COM_JOMDIRECTORY_CFG_LAYOUT"/>
+            <field name="layout" type="componentlayout" label="COM_JOMDIRECTORY_MENU_LAYOUT" template="false" extension="com_jomdirectory" view="products" useglobal="true"/>
+
+            <field id="listing_layout" name="listing_layout" type="list" label="COM_JOMDIRECTORY_CFG_LISTING_SORT" description="COM_JOMDIRECTORY_CFG_LISTING_SORT_DESC" default="0" class="inputbox">
+                <option value="latest">COM_JOMDIRECTORY_CFG_LISTING_SORT_LATEST</option>
+                <option value="updated">COM_JOMDIRECTORY_CFG_LISTING_SORT_UPDATED</option>
+                <option value="alfa">COM_JOMDIRECTORY_CFG_LISTING_SORT_ALPHABETICALLY</option>
+                <option value="rated_desc">COM_JOMDIRECTORY_CFG_LISTING_SORT_RATED_DESC</option>
+                <option value="rated_asc">COM_JOMDIRECTORY_CFG_LISTING_SORT_RATED_ASC</option>
+                <option value="viewed">COM_JOMDIRECTORY_CFG_LISTING_SORT_MOSTVIEWED</option>
+            </field>
+            <field name="product_layout" type="radio" class="btn-group" default="4" label="COM_JOMDIRECTORY_CFG_PRODUCT_LAYOUT" description="">
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </field>
+            <field id="listing_per_page" name="listing_per_page" type="list" label="COM_JOMDIRECTORY_CFG_LISTING_PERPAGE" description="COM_JOMDIRECTORY_CFG_LISTING_PERPAGE_DESC" default="0" class="inputbox">
+                <option value="8">8</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+                <option value="60">60</option>
+            </field>
+
+            <field name="premium_on_top" type="radio" default="0" label="COM_JOMDIRECTORY_CFG_PREMIUM_ON_TOP" description="COM_JOMDIRECTORY_CFG_PREMIUM_ON_TOP_DESC" class="btn-group">
+                <option value="0">COM_JOMDIRECTORY_CFG_NO</option>
+                <option value="1">COM_JOMDIRECTORY_CFG_YES</option>
+            </field>
+
+            <field name="media" type="spacer" class="text" label="COM_JOMDIRECTORY_CFG_MEDIA_OPTIONS"/>
+
+            <field name="image_product_width" type="text" size="5" default="250" label="COM_JOMDIRECTORY_CFG_MEDIA_PRODUCT_W" description=""/>
+            <field name="image_product_format" type="radio" class="btn-group" default="4/3" label="COM_JOMDIRECTORY_CFG_MEDIA_PRODUCT_F" description="">
+                <option value="1/1">1/1</option>
+                <option value="4/3">4/3</option>
+                <option value="16/9">16/9</option>
+            </field>
+
+            <field name="product_main_gallery_width" type="text" size="5" default="850" label="COM_JOMDIRECTORY_CFG_MEDIA_PRODUCT_MAIN_W" description=""/>
+            <field name="product_main_gallery_height" type="text" size="5" default="650" label="COM_JOMDIRECTORY_CFG_MEDIA_PRODUCT_MAIN_H" description=""/>
+            <field name="product_main_gallery_format" type="radio" class="btn-group" default="4/3" label="COM_JOMDIRECTORY_CFG_MEDIA_PRODUCT_MAIN_F" description="">
+                <option value="0">COM_JOMDIRECTORY_CFG_MEDIA_GALLERY_NO_FORMAT</option>
+                <option value="1/1">1/1</option>
+                <option value="4/3">4/3</option>
+                <option value="16/9">16/9</option>
+            </field>
+
+            <field name="layout_items" type="spacer" class="text" label="COM_JOMDIRECTORY_CFG_LAYOUT_OPTIONS"/>
+
+            <field name="product_reviews" type="radio" default="1" label="COM_JOMDIRECTORY_CFG_REVIEWS_ENABLE" class="btn-group">
+                <option value="0">COM_JOMDIRECTORY_CFG_NO</option>
+                <option value="1">COM_JOMDIRECTORY_CFG_YES</option>
+            </field>
+            <field name="product_att" type="radio" class="btn-group" default="1" label="COM_JOMDIRECTORY_CFG_ENABLE_ATTACHEMENTS" description="">
+                <option value="0">COM_JOMDIRECTORY_CFG_NO</option>
+                <option value="1">COM_JOMDIRECTORY_CFG_YES</option>
+            </field>
+            <field name="product_save" type="radio" class="btn-group" default="1" label="COM_JOMDIRECTORY_CFG_PRODUCT_SAVE" description="">
+                <option value="0">COM_JOMDIRECTORY_CFG_NO</option>
+                <option value="1">COM_JOMDIRECTORY_CFG_YES</option>
+            </field>
+            <field name="product_compare" type="radio" default="1" class="btn-group" label="COM_JOMDIRECTORY_CFG_PRODUCT_COMPARE" description="">
+                <option value="0">COM_JOMDIRECTORY_CFG_NO</option>
+                <option value="1">COM_JOMDIRECTORY_CFG_YES</option>
+            </field>
+            <field name="product_availability" type="radio" class="btn-group" default="1" label="COM_JOMDIRECTORY_CFG_PRODUCT_AVAILABILITY" description="">
+                <option value="0">COM_JOMDIRECTORY_CFG_NO</option>
+                <option value="1">COM_JOMDIRECTORY_CFG_YES</option>
+            </field>
+            <field name="product_social" type="radio" default="1" class="btn-group" label="COM_JOMDIRECTORY_CFG_ENABLE_SOCIAL" description="">
+                <option value="0">COM_JOMDIRECTORY_CFG_NO</option>
+                <option value="1">COM_JOMDIRECTORY_CFG_YES</option>
+            </field>
+            <field name="product_short_desc" type="radio" class="btn-group" default="1" label="COM_JOMDIRECTORY_CFG_ENABLE_SHORT_DESCR" description="">
+                <option value="0">COM_JOMDIRECTORY_CFG_NO</option>
+                <option value="1">COM_JOMDIRECTORY_CFG_YES</option>
+            </field>
+            <field name="product_video" type="radio" class="btn-group" default="1" label="COM_JOMDIRECTORY_CFG_ENABLE_VIDEO" description="">
+                <option value="0">COM_JOMDIRECTORY_CFG_NO</option>
+                <option value="1">COM_JOMDIRECTORY_CFG_YES</option>
+            </field>
+
+        </fieldset>
+    </fields>
+
+
+</metadata>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<form>
+    <fieldset name="">
+
+        <field name="title" type="text" label="JGLOBAL_TITLE"
+               description="JFIELD_TITLE_DESC" class="form-control"
+               required="true"/>
+
+        <field name="content_id" type="hidden"/>
+
+        <field name="file" type="file" label="JGLOBAL_TITLE"
+               description="JFIELD_TITLE_DESC" class="form-control"
+               required="true"/>
+
+        <field name="description" type="textarea" class="form-control"
+               label="COM_JOMDIRECTORY_FIELD_ARTICLETEXT_LABEL" description="COM_JOMDIRECTORY_FIELD_ARTICLETEXT_DESC"
+        />
+
+        <field name="published" type="list" label="JSTATUS"
+               description="JFIELD_PUBLISHED_DESC" class="form-control"
+               filter="intval" size="1" default="1"
+        >
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+        </field>
+        <field name="save" type="submit"/>
+    </fieldset>
+</form>
+

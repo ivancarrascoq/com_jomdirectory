@@ -1,0 +1,35 @@
+.checkout-header .jd-header-block {
+    width: 200px;
+    margin-right: 25px;
+    margin-top: 20px;
+    vertical-align: top;
+}
+
+.checkout-header .jd-header-number {
+    width: 70px;
+    height: 70px;
+    line-height: 68px;
+    border-radius: 100px;
+    background: #DFE3E4;
+    border: 2px solid #fff;
+    z-index: 1;
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+}
+
+.checkout-header .jd-header-active {
+    background: #0e9cc7;
+}
+
+.checkout-header .jd-header-title {
+    font-size: 14px;
+    margin-top: 20px;
+    word-wrap: break-word;
+    font-weight: 500;
+}
+
+.checkout-wrapper .jd-total {
+    border-top: 2px solid #ddd
+}
+

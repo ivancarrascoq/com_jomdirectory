@@ -1,0 +1,19 @@
+#jd-item-wrapper {
+    margin: 20px;
+}
+
+#jd-item-wrapper .jd-itemAddressBox {
+    font-size: 16px;
+}
+
+#jd-item-wrapper label {
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #3d3a37;
+    font-family: 'Open Sans';
+    font-weight: 200 !important;
+    margin: 0 0 20px;
+    text-transform: none;
+}

@@ -1,0 +1,356 @@
+#jd-itemWrapper {
+    margin: 0;
+    padding: 0;
+}
+
+#jd-itemWrapper .jd-itemBodyTop ul {
+    margin: 10px 0;
+    padding: 0;
+}
+
+#jd-itemWrapper .jd-itemAddressBox {
+    font-size: 16px;
+}
+
+#jd-itemWrapper .jd-score {
+    display: block;
+    margin: 10px 0px;
+    max-width: 130px;
+    text-align: center;
+}
+
+#jd-itemWrapper .jd-knob .jd-scorePoints {
+    float: left;
+}
+
+#jd-itemWrapper .jd-knob .jd-scorePointsDescr {
+    padding-top: 15px;
+}
+
+#jd-itemWrapper .jd-stars .jd-scorePointsDescr {
+    padding-top: 5px;    
+}
+
+#jd-itemWrapper  .jd-scorePointsDescr {
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #999;
+}
+
+#jd-itemWrapper .jd-itemBodyTop {
+    padding: 10px;
+    border: 1px solid #DDD;
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.83) 83%, rgba(249,249,249,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(83%,rgba(255,255,255,0.83)), color-stop(100%,rgba(249,249,249,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.83) 83%,rgba(249,249,249,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.83) 83%,rgba(249,249,249,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.83) 83%,rgba(249,249,249,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.83) 83%,rgba(249,249,249,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#f9f9f9',GradientType=0 ); /* IE6-9 */
+}
+
+#jd-itemWrapper .jd-itemBodyTop label,
+#jd-itemWrapper .cd-customfield-label {
+    font-weight: bold;
+}
+
+#jd-itemWrapper .jd-itemShortText {
+    font-style: italic;
+}
+
+#jd-itemWrapper .jd-itemLogo {
+    border-top: 4px solid #efefef;
+    border-bottom: 4px solid #efefef;
+    border-left: 4px solid #efefef;
+    bottom: 25%;
+    position: absolute;
+    right: -1px;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 600px) { 
+    
+    #jd-itemWrapper .jd-itemLogo img {
+        max-width: 70px!important
+    }
+
+}
+
+#jd-itemWrapper .jd-itemWatchVideo {
+    bottom: 20%;
+    left: 0;
+}
+
+#jd-itemWrapper .jd-itemBodyTop .jd-tableFooter {
+    border-top: 1px dotted #DDDDDD;
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width : 360px) {
+    #jd-itemWrapper .jd-itemBodyTop .jd-tableFooter {
+        text-align: center
+    }
+    #jd-itemWrapper .jd-itemBodyTop .jd-item-toolbar {
+        float: none;
+    }
+    #jd-itemWrapper .jd-contact-message {
+        margin-top: 15px;
+    }
+}
+
+
+/* REVIEWS */
+
+#jd-itemWrapper .jd-reviewsRecommended {
+    width: 200px;
+    height: 75px;
+}
+
+#jd-itemWrapper .jd-reviewsBody {
+    border-bottom: 1px dotted #CCCCCC;
+}
+
+#jd-itemWrapper .jd-reviewsBodyContent {
+    border-left: 1px solid #f1f1f1;
+}
+
+#jd-itemWrapper .jd-reviewsUser {
+    font-weight: bold;
+}
+
+#jd-itemWrapper .jd-ReviewsScoreDescr {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #999;
+}
+
+#jd-itemWrapper .jd-reviewsGauges {
+    display: block;
+    float: left;
+    margin: 10px;
+    text-align: center;
+}
+
+#jd-itemWrapper .jd-reviewsGauges label {
+    display: block;
+    font-weight: bold;
+}
+
+#jd-itemWrapper .jd-gaugesSmall label {
+    display: block;
+    font-size: 11px;
+    padding-bottom: 5px;
+}
+
+#jd-itemWrapper .jd-writeReviewBox {
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+    -webkit-box-sizing: border-box;
+ /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+         /* Opera/IE 8+ */;
+}
+
+#jd-itemWrapper .jd-writeReviewBox label {
+    display: block;
+    font-weight: bold;
+}
+
+#jd-itemWrapper .jd-writeReviewRates {
+    width: 100%;
+}
+
+#jd-itemWrapper .jd-writeReviewRecommend {
+    display: block;
+    clear: both;
+}
+
+#jd-itemWrapper .jd-writeReviewSummary textarea {
+    width: 90%;
+    height: 120px;
+}
+
+#jd-itemWrapper .jd-reviewsLikes {
+    text-align: right;
+}
+
+#jd-itemWrapper .jd-reviewsBodyDate {
+    font-size: 10px;
+    text-align: right;
+}
+
+#jd-itemWrapper .jd-reviewsBodyRecommend {
+    padding: 10px 0;
+    border-top: 2px solid #f1f1f1;
+}
+
+#jd-itemWrapper .jd-reviewsBodyRecommend label {
+    display: inline-block;
+}
+
+#jd-item-wrapper .invalid {
+    color: #ff0000!important;
+}
+
+/*TABS*/
+
+#jd-item-box-tabs {
+    margin: 0;
+    padding: 0;
+}
+
+#jd-item-box-tabs ul {
+    margin: 0;
+    padding: 0;
+}
+
+#jd-item-box-tabs-menu li {
+    float: left;
+    margin-right: 2px!important;
+    margin-bottom: -1px!important;
+    list-style: none;
+}
+
+#jd-item-box-tabs-menu li a {
+    display: block;
+    line-height: 20px;
+    padding: 10px 15px;
+    border-radius: 5px 5px 0 0;
+    background: #fafbfb;
+    border-color: #ddd #eee;
+    border-style: solid solid none;
+    border-width: 3px 1px medium;
+    color: #555;
+    cursor: pointer;
+}
+
+#jd-item-box-tabs-menu li a:hover {
+    text-decoration: none;
+}
+
+#jd-item-box-tabs .jc-active a {
+    background: #fff;
+    border-left-color: #eee;
+    border-right-color: #eee;
+    border-top: 3px solid #555;
+    color: #555;
+}
+
+#jd-item-box-tabs .jc-active {
+   background: #fff; 
+}
+
+#jd-item-wrapper .jd-files-data {
+    font-size: 10px;
+    color: #777;
+}
+
+#jd-item-wrapper .cd-tab-custom .cd-customfield-row label {
+    display: none;
+} 
+
+#textarea-mce label,
+#tab-custom label,
+#jform_rate label {
+    display: none;
+}
+
+#jd-item-wrapper .tags a {
+    background: none;
+    color: #333;
+    text-shadow: none;
+    font-weight: normal;
+}
+
+/*CONTACT*/
+
+#jd-item-wrapper .jd-contact textarea {
+    width: 90%
+}
+
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+    
+    #jd-item-box-tabs-menu li {
+        width: 100%;
+    }
+
+    #recaptcha_image img {
+        max-width: 100%;
+    }
+
+    #jd-itemWrapper .jd-writeReviewRight {
+        display: inline-block;
+        width: 100%;
+    }
+
+    #jd-itemWrapperr .jd-reviewsRecommendedBox {
+        display: none;
+    }
+    
+}
+
+
+/* Slideshow */
+
+.jc-slider-arrow-left, .jc-slider-arrow-right, .jssora03ldn, .jssora03rdn {
+    position: absolute;
+    cursor: pointer;
+    display: block;
+    background: url(../images/a03.png) no-repeat;
+    overflow: hidden;
+}
+
+.jc-slider-arrow-left {
+    background-position: -11px -41px;
+}
+
+.jc-slider-arrow-right {
+    background-position: -71px -41px;
+}
+
+.jc-slider-arrow-left:hover {
+    background-position: -131px -41px;
+}
+
+.jc-slider-arrow-right:hover {
+    background-position: -191px -41px;
+}
+
+.jssora03ldn {
+    background-position: -251px -41px;
+}
+
+.jssora03rdn {
+    background-position: -311px -41px;
+}
+
+.jc-slider-thumbnail .p:hover .c, .jc-slider-thumbnail .pav:hover .c, .jc-slider-thumbnail .pav .c {
+    background: url("../images/t01.png") repeat scroll center center rgba(0, 0, 0, 0);
+    border-width: 0;
+    position: absolute;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+    width: 80px;
+}
+
+.jc-slider-thumbnail .c {
+    height: 80px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 80px;
+}
+
+#jc-slideshow-jssor .w { 
+    width: 80px; 
+    height: 80px; 
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="">
+        <field name="name" type="text" label="COM_JOMDIRECTORY_CONTACT_NAME" class="form-control" required="true" hint="e.g. John"/>
+        <field name="email" type="text" label="COM_JOMDIRECTORY_CONTACT_EMAIL" class="form-control" required="true" validate="email" hint="e.g. example@mail.com"/>
+        <field name="email_owner" type="hidden"/>
+        <field name="phone" type="text" label="COM_JOMDIRECTORY_CONTACT_PHONE" class="form-control"/>
+        <field name="message" type="textarea" label="COM_JOMDIRECTORY_CONTACT_MESSAGE" class="form-control" required="true" rows="5" hint="Your message..."/>
+        <field name="terms2" type="checkbox" label="COM_JOMDIRECTORY_CONTACT_ACCEPT" class="" required="true" default="0"/>
+        <field name="content_id" type="hidden"/>
+    </fieldset>
+</form>
+
+

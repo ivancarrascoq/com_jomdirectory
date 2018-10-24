@@ -1,0 +1,9 @@
+#jomdirectory-products .price {
+    color: #343f49;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#jomdirectory-products .price-sale {
+    color: #e00;
+}

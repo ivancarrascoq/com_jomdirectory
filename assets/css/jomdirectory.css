@@ -1,0 +1,159 @@
+ul.inline > li, ol.inline > li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.row.no-gutters > .col,
+.row.no-gutters > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.nav-tabs a {
+    color: #000;
+}
+
+.bg-black {
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.nounderline, .nounderline:hover {
+    text-decoration: none !important;
+}
+
+
+/*
+* === FEATURED ===
+*/
+
+#jomdirectory-list .jd-title-featured, #jomdirectory-items-grid .jd-title-featured {
+    color: #fff;
+    font-weight: 700;
+    left: -44px;
+    padding: 4px 45px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 16px;
+    transform: rotate(-45deg);
+    background-color: #2196f3;
+    z-index: 1;
+}
+
+#jomdirectory-products .jd-product-featured {
+    color: #fff;
+    font-weight: 700;
+    left: -44px;
+    padding: 4px 45px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 16px;
+    transform: rotate(-45deg);
+    background-color: #2196f3;
+    z-index: 1;
+}
+
+#sbox-window {
+    box-sizing: unset;
+}
+
+.modal.modal-block {
+    top: unset;
+    right: unset;
+    bottom: unset;
+    left: unset;
+}
+
+/*
+* === TABS ===
+*/
+
+#tabs-header {
+    border-bottom: 0;
+}
+
+#tabs-header li a {
+    line-height: 20px;
+    padding: 10px 15px;
+    border-radius: 5px 5px 0 0;
+    background: #fffff;
+    border-color: #ddd #eee;
+    border-style: solid solid none;
+    border-width: 3px 1px medium;
+    color: #363636 !important;
+    cursor: pointer;
+}
+
+#tabs-header li a:hover {
+    text-decoration: none;
+}
+
+#tabs-header a[aria-selected="true"] {
+    background: #fff;
+    border-top: 3px solid #555;
+    color: #363636 !important;
+}
+
+#tab-content {
+    border-top: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .05);
+}
+
+/*
+* === CALENDAR OVERRIDES  ===
+*/
+
+.booking-services .fc-event {
+    background-color: #11aaf6 !important;
+}
+
+/* Colorpicker */
+.minicolors-theme-bootstrap .hex {
+    width: 70px !important;
+    padding-left: 3px !important;
+}
+
+.minicolors-theme-bootstrap .minicolors-panel {
+    box-sizing: unset !important;
+}
+
+.marker-hovered {
+    animation-duration: 1s;
+    animation-name: colorchange;
+    animation-iteration-count: infinite;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-name: colorchange;
+    -webkit-animation-iteration-count: infinite;
+    /*filter: grayscale(80%);*/
+}
+
+@keyframes colorchange {
+    0% {
+        filter: invert(0%)
+    }
+    10% {
+        filter: invert(50%)
+    }
+    20% {
+        filter: invert(100%)
+    }
+    80% {
+        filter: invert(100%)
+    }
+    90% {
+        filter: invert(50%)
+    }
+    100% {
+        filter: invert(00%)
+    }
+}
+

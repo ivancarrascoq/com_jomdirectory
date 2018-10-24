@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_JOMDIRECTORY_LAYOUT_PRODUCT" hidden="true">
+        <help
+                key="COM_JOMDIRECTORY_VIEW_CATEGORY_SINGLE_TITLE_HELP"
+        />
+        <message>
+            <![CDATA[COM_CONTENT_CATEGORIES_VIEW_DEFAULT_DESC]]>
+        </message>
+    </layout>
+
+    <!-- Add fields to the request variables for the layout. -->
+    <fields name="request">
+        <fieldset name="request">
+            <field name="categories_id" type="jdcategory" filter="url"
+                   label="JCATEGORY" description="JFIELD_CATEGORY_DESC" extension="com_jomdirectory.jomdirectory"
+                   textall="COM_JOMDIRECTORY_GENERICLIST_BLANK_SELECT"
+                   class="inputbox" lang="all" required="false" blank="1"/>
+
+            <field name="categories_address_id" type="jdaddress" required="false"
+                   label="COM_JOMDIRECTORY_FIELD_ADDRESS" lang="all" description="COM_JOMDIRECTORY_FIELD_ADDRESS_DESC"
+                   class="inputbox"/>
+
+        </fieldset>
+    </fields>
+
+
+    <!-- Add fields to the parameters object for the layout. -->
+    <fields name="params">
+        <fieldset name="basic" label="COM_JOMDIRECTORY_MENU_PARAMS">
+
+            <field id="global_option" name="global_option" type="radio" label="COM_JOMDIRECTORY_CFG_USE_GLOBAL" default="1" class="btn-group">
+                <option value="0">NO</option>
+                <option value="1">YES</option>
+            </field>
+            <field name="lay" type="spacer" class="text" label="COM_JOMDIRECTORY_CFG_LAYOUT"/>
+            <field name="layout" type="componentlayout" label="COM_JOMDIRECTORY_MENU_LAYOUT" template="false" extension="com_jomdirectory" view="items" useglobal="true"/>
+            <field name="columns-grid" type="radio" default="4" label="COM_JOMDIRECTORY_CFG_GRID_COLUMNS_COUNT" description="COM_JOMDIRECTORY_CFG_GRID_COLUMNS_COUNT_DESC" class="btn-group">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </field>
+            <field id="listing_layout" name="listing_layout" type="list" label="COM_JOMDIRECTORY_CFG_LISTING_SORT" description="COM_JOMDIRECTORY_CFG_LISTING_SORT_DESC" default="0" class="inputbox">
+                <option value="latest">COM_JOMDIRECTORY_CFG_LISTING_SORT_LATEST</option>
+                <option value="updated">COM_JOMDIRECTORY_CFG_LISTING_SORT_UPDATED</option>
+                <option value="alfa">COM_JOMDIRECTORY_CFG_LISTING_SORT_ALPHABETICALLY</option>
+                <option value="rated_desc">COM_JOMDIRECTORY_CFG_LISTING_SORT_RATED_DESC</option>
+                <option value="rated_asc">COM_JOMDIRECTORY_CFG_LISTING_SORT_RATED_ASC</option>
+                <option value="viewed">COM_JOMDIRECTORY_CFG_LISTING_SORT_MOSTVIEWED</option>
+            </field>
+            <field id="listing_per_page" name="listing_per_page" type="list" label="COM_JOMDIRECTORY_CFG_LISTING_PERPAGE" description="COM_JOMDIRECTORY_CFG_LISTING_PERPAGE_DESC" default="0" class="inputbox">
+                <option value="8">8</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+                <option value="60">60</option>
+            </field>
+            <!--
+            <field
+                name="expiration_date"
+                type="text"
+                size="5"
+                default="30"
+                label="COM_JOMDIRECTORY_CFG_LISTING_EXPIRY"
+                description="COM_JOMDIRECTORY_CFG_DATE_LISTING_EXPIRY_DESC" />
+            <field
+                name="listings_days_as_new"
+                type="text"
+                size="5"
+                default="5"
+                label="COM_JOMDIRECTORY_CFG_LISTING_NEW"
+                description="COM_JOMDIRECTORY_CFG_DATE_LISTING_NEW_DESC" />
+            <field
+                name="listings_days_as_updated"
+                type="text"
+                size="5"
+                default="5"
+                label="COM_JOMDIRECTORY_CFG_LISTING_UPDATED"
+                description="COM_JOMDIRECTORY_CFG_DATE_LISTING_UPDATED_DESC" />
+                -->
+            <field name="premium_on_top" type="radio" default="0" label="COM_JOMDIRECTORY_CFG_PREMIUM_ON_TOP" description="COM_JOMDIRECTORY_CFG_PREMIUM_ON_TOP_DESC">
+                <option value="0">COM_JOMDIRECTORY_CFG_NO</option>
+                <option value="1">COM_JOMDIRECTORY_CFG_YES</option>
+            </field>
+
+            <field name="media" type="spacer" class="text" label="COM_JOMDIRECTORY_CFG_MEDIA_OPTIONS"/>
+
+            <field name="image_items_width" type="text" size="5" default="250" label="COM_JOMDIRECTORY_CFG_MEDIA_W" description=""/>
+            <field name="image_items_format" type="list" default="1" label="COM_JOMDIRECTORY_CFG_MEDIA_F" description="">
+                <option value="1/1">1/1</option>
+                <option value="4/3">4/3</option>
+                <option value="16/9">16/9</option>
+            </field>
+
+            <field name="image_logo_width" type="text" size="5" default="150" label="COM_JOMDIRECTORY_CFG_MEDIA_LOGO_W" description=""/>
+            <field name="item_image_logo_width" type="text" size="5" default="150" label="COM_JOMDIRECTORY_CFG_MEDIA_LOGO_F" description=""/>
+            <!--
+           <field name="image_logo_format"  type="list" default="1" label="COM_JOMDIRECTORY_CFG_MEDIA_LOGO_F" description="">
+               <option value="1/1">1/1</option>
+               <option value="4/3">4/3</option>
+               <option value="16/9">16/9</option>
+           </field>
+           -->
+            <field name="image_main_gallery_width" type="text" size="5" default="850" label="COM_JOMDIRECTORY_CFG_MEDIA_GALLERY_MAIN_W" description=""/>
+            <field name="image_main_gallery_height" type="text" size="5" default="650" label="COM_JOMDIRECTORY_CFG_MEDIA_GALLERY_MAIN_H" description=""/>
+            <field name="image_main_gallery_format" type="list" default="4/3" label="COM_JOMDIRECTORY_CFG_MEDIA_GALLERY_MAIN_F" description="">
+                <option value="1/1">1/1</option>
+                <option value="4/3">4/3</option>
+                <option value="16/9">16/9</option>
+            </field>
+
+            <field name="image_gallery_width" type="text" size="5" default="200" label="COM_JOMDIRECTORY_CFG_MEDIA_GALLERY_W" description=""/>
+            <field name="image_gallery_format" type="list" default="4/3" label="COM_JOMDIRECTORY_CFG_MEDIA_GALLERY_F" description="">
+                <option value="1/1">1/1</option>
+                <option value="4/3">4/3</option>
+                <option value="16/9">16/9</option>
+            </field>
+
+            <field name="layout_items" type="spacer" class="text" label="COM_JOMDIRECTORY_CFG_LAYOUT_OPTIONS"/>
+
+            <field name="enable_print" type="radio" class="btn-group" default="1" label="COM_JOMDIRECTORY_CFG_ENABLE_PRINT" description="COM_JOMDIRECTORY_CFG_ENABLE_PRINT_DESC">
+                <option value="0">COM_JOMDIRECTORY_CFG_NO</option>
+                <option value="1">COM_JOMDIRECTORY_CFG_YES</option>
+            </field>
+            <field name="enable_taf" type="radio" class="btn-group" default="1" label="COM_JOMDIRECTORY_CFG_ENABLE_TAF" description="COM_JOMDIRECTORY_CFG_ENABLE_TAF_DESC">
+                <option value="0">COM_JOMDIRECTORY_CFG_NO</option>
+                <option value="1">COM_JOMDIRECTORY_CFG_YES</option>
+            </field>
+            <field name="enable_date" type="radio" default="1" class="btn-group" label="COM_JOMDIRECTORY_CFG_ENABLE_DATE" description="">
+                <option value="0">COM_JOMDIRECTORY_CFG_NO</option>
+                <option value="1">COM_JOMDIRECTORY_CFG_YES</option>
+            </field>
+            <!--
+            <field name="enable_att"  type="radio" default="1" label="COM_JOMDIRECTORY_CFG_ENABLE_ATTACHEMENTS" description="">
+                <option value="0">COM_JOMDIRECTORY_CFG_NO</option>
+                <option value="1">COM_JOMDIRECTORY_CFG_YES</option>
+            </field>
+            -->
+            <field name="enable_save" type="radio" class="btn-group" default="1" label="COM_JOMDIRECTORY_CFG_ENABLE_SAVE" description="">
+                <option value="0">COM_JOMDIRECTORY_CFG_NO</option>
+                <option value="1">COM_JOMDIRECTORY_CFG_YES</option>
+            </field>
+            <field name="enable_social" type="radio" class="btn-group" default="1" label="COM_JOMDIRECTORY_CFG_ENABLE_SOCIAL" description="">
+                <option value="0">COM_JOMDIRECTORY_CFG_NO</option>
+                <option value="1">COM_JOMDIRECTORY_CFG_YES</option>
+            </field>
+            <field name="enable_user_logo" type="radio" class="btn-group" default="1" label="COM_JOMDIRECTORY_CFG_ENABLE_USER_LOGO" description="">
+                <option value="0">COM_JOMDIRECTORY_CFG_NO</option>
+                <option value="1">COM_JOMDIRECTORY_CFG_YES</option>
+            </field>
+            <field name="enable_address" type="radio" class="btn-group" default="1" label="COM_JOMDIRECTORY_CFG_ENABLE_ADDRESS" description="">
+                <option value="0">COM_JOMDIRECTORY_CFG_NO</option>
+                <option value="1">COM_JOMDIRECTORY_CFG_YES</option>
+            </field>
+            <field name="enable_short_desc" type="radio" class="btn-group" default="1" label="COM_JOMDIRECTORY_CFG_ENABLE_SHORT_DESCR" description="">
+                <option value="0">COM_JOMDIRECTORY_CFG_NO</option>
+                <option value="1">COM_JOMDIRECTORY_CFG_YES</option>
+            </field>
+            <field name="enable_video" type="radio" class="btn-group" default="1" label="COM_JOMDIRECTORY_CFG_ENABLE_VIDEO" description="">
+                <option value="0">COM_JOMDIRECTORY_CFG_NO</option>
+                <option value="1">COM_JOMDIRECTORY_CFG_YES</option>
+            </field>
+            <field name="enable_map" type="radio" class="btn-group" default="1" label="COM_JOMDIRECTORY_CFG_ENABLE_MAP_LOCATION" description="">
+                <option value="0">COM_JOMDIRECTORY_CFG_NO</option>
+                <option value="1">COM_JOMDIRECTORY_CFG_YES</option>
+            </field>
+            <field name="enable_maps_listing" class="btn-group" type="radio" default="1" label="COM_JOMDIRECTORY_CFG_ENABLE_MAP_ITEMS" description="">
+                <option value="0">COM_JOMDIRECTORY_CFG_NO</option>
+                <option value="1">COM_JOMDIRECTORY_CFG_YES</option>
+            </field>
+            <field name="enable_list_image" type="radio" default="1" class="btn-group" label="COM_JOMDIRECTORY_CFG_CATEGORIES_TREE_IMG" description="">
+                <option value="0">COM_JOMDIRECTORY_CFG_NO</option>
+                <option value="1">COM_JOMDIRECTORY_CFG_YES</option>
+            </field>
+            <field name="enable_date" type="radio" default="0" class="btn-group" label="COM_JOMDIRECTORY_CFG_ENABLE_DATE" description="">
+                <option value="0">COM_JOMDIRECTORY_CFG_NO</option>
+                <option value="1">COM_JOMDIRECTORY_CFG_YES</option>
+            </field>
+
+
+            <field name="spacer4" type="spacer" class="text" label="COM_JOMDIRECTORY_CFG_CONTACT_OPTIONS"/>
+
+            <field name="enable_contact" class="btn-group" type="radio" default="1" label="COM_JOMDIRECTORY_CFG_ENABLE_CONTACT" description="">
+                <option value="0">COM_JOMDIRECTORY_CFG_NO</option>
+                <option value="1">COM_JOMDIRECTORY_CFG_YES</option>
+            </field>
+            <field name="enable_terms" class="btn-group" type="radio" default="1" label="COM_JOMDIRECTORY_CFG_ENABLE_CONTACT_TERMS" description="">
+                <option value="0">COM_JOMDIRECTORY_CFG_NO</option>
+                <option value="1">COM_JOMDIRECTORY_CFG_YES</option>
+            </field>
+            <!--
+            <field name="spacer8" type="spacer" class="text" label="COM_JOMDIRECTORY_CFG_RSS_OPTIONS" />
+        
+            <field name="enable_rss"  type="radio" default="1" label="COM_JOMDIRECTORY_CFG_ENABLE_RSS" description="">
+                <option value="0">COM_JOMDIRECTORY_CFG_NO</option>
+                <option value="1">COM_JOMDIRECTORY_CFG_YES</option>
+            </field>
+            <field name="enable_rss_type"  type="list" default="0" label="COM_JOMDIRECTORY_CFG_ENABLE_RSS_TYPE" description="">
+                <option value="0">COM_JOMDIRECTORY_CFG_ENABLE_RSS_SHORT</option>
+                <option value="1">COM_JOMDIRECTORY_CFG_ENABLE_RSS_FULLTEXT</option>
+            </field>
+            -->
+        </fieldset>
+    </fields>
+
+
+</metadata>
+

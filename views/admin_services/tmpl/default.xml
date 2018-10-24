@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_JOMDIRECTORY_VIEW_FRONT_ADMIN_TITLE" option="com_jomdirectory" hidden="true">
+        <message>
+            <![CDATA[Lista z kategorii]]>
+        </message>
+    </layout>
+    <!-- Add fields to the request variables for the layout. -->
+
+
+</metadata>

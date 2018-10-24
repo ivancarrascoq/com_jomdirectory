@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="Square" hidden="true">
+        <message>
+            <![CDATA[Lista z kategorii]]>
+        </message>
+    </layout>
+    <!-- Add fields to the request variables for the layout. -->
+
+    <fields name="params">
+        <fieldset name="basic" label="COM_JOMDIRECTORY_MENU_PARAMS">
+
+            <field name="lay" type="spacer" class="text" label="COM_JOMDIRECTORY_CFG_LAYOUT"/>
+            <field name="layout" type="componentlayout" label="COM_JOMDIRECTORY_MENU_LAYOUT" template="false" extension="com_jomdirectory" view="categories" useglobal="true"/>
+            <field name="cat_columns" type="radio" default="4" label="COM_JOMDIRECTORY_CFG_CATEGORIES_COLUMNS_COUNT" class="btn-group">
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </field>
+            <field name="type" type="radio" default="1" label="COM_JOMDIRECTORY_CFG_CATEGORIES_TYPE" description="">
+                <option value="0">COM_JOMDIRECTORY_PRODUCTS</option>
+                <option value="1">COM_JOMDIRECTORY_HOME_LISTINGS</option>
+            </field>
+            <field name="categories_id" type="jdcategory"
+                   label="COM_JOMDIRECTORY_CFG_CATEGORY_START_LEVEL" description="" extension="com_jomdirectory.jomdirectory"
+                   textall="COM_JOMDIRECTORY_GENERICLIST_BLANK_SELECT"
+                   class="inputbox" lang="all" required="false" blank="1"/>
+            <field name="categoires_img" type="radio" default="1" label="COM_JOMDIRECTORY_CFG_CATEGORIES_TREE_IMG" description="">
+                <option value="0">COM_JOMDIRECTORY_CFG_NO</option>
+                <option value="1">COM_JOMDIRECTORY_CFG_YES</option>
+            </field>
+            <field name="categoires_count" type="radio" default="1" label="COM_JOMDIRECTORY_CFG_CATEGORIES_TREE_COUNT" description="">
+                <option value="0">COM_JOMDIRECTORY_CFG_NO</option>
+                <option value="1">COM_JOMDIRECTORY_CFG_YES</option>
+            </field>
+            <field name="categoires_sub" type="radio" default="1" label="COM_JOMDIRECTORY_CFG_CATEGORIES_TREE_SUB" description="">
+                <option value="0">COM_JOMDIRECTORY_CFG_NO</option>
+                <option value="1">COM_JOMDIRECTORY_CFG_YES</option>
+            </field>
+            <field name="enable_cat_index" type="radio" default="1" label="COM_JOMDIRECTORY_CFG_ENABLE_INDEX" description="">
+                <option value="0">COM_JOMDIRECTORY_CFG_NO</option>
+                <option value="1">COM_JOMDIRECTORY_CFG_YES</option>
+            </field>
+
+
+            <field name="media" type="spacer" class="text" label="COM_JOMDIRECTORY_CFG_MEDIA_OPTIONS"/>
+
+            <field name="image_cat_width" type="text" size="5" default="250" label="COM_JOMDIRECTORY_CFG_MEDIA_CATEGORY_W" description=""/>
+            <field name="image_cat_format" type="list" default="1" label="COM_JOMDIRECTORY_CFG_MEDIA_CATEGORY_F" description="">
+                <option value="1/1">1/1</option>
+                <option value="4/3">4/3</option>
+                <option value="16/9">16/9</option>
+            </field>
+
+        </fieldset>
+    </fields>
+
+
+</metadata>

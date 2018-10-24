@@ -1,0 +1,18 @@
+
+#jomdirectory-list ul {
+    margin: 0;
+}
+
+#jomdirectory-list .footer-premium {
+    color: #ffffff;
+    background-color: #2196f3 !important;
+    border-color: #2196f3;
+}
+
+#jomdirectory-list .footer-premium a {
+    color: #fff!important;
+}
+
+#jomdirectory-list address {
+    font-size: 16px;
+}

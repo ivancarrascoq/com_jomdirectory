@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="">
+        <field name="name" type="text" label="COM_JOMDIRECTORY_TAF_NAME" class="form-control" required="true"/>
+        <field name="email" type="text" label="COM_JOMDIRECTORY_TAF_EMAIL" class="form-control" required="true"/>
+        <field name="email_rec" type="text" label="COM_JOMDIRECTORY_TAF_EMAIL_REC" class="form-control" required="true"/>
+        <field name="subject" type="text" label="COM_JOMDIRECTORY_TAF_SUBJECT" class="form-control" required="true"/>
+        <field name="messagetaf" type="textarea" label="COM_JOMDIRECTORY_TAF_MESSAGE" class="form-control" required="true"/>
+        <field name="content_id" type="hidden"/>
+    </fieldset>
+</form>
+
+

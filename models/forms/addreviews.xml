@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="">
+        <field name="title" type="text" label="COM_JOMDIRECTORY_REVIEW_TITLE" class="form-control" labelclass="a12" required="true"/>
+        <field name="username" type="text" label="COM_JOMDIRECTORY_REVIEW_NAME" class="form-control" required="true"/>
+        <field name="rate" type="radio" label="COM_JOMDIRECTORY_REVIEW_RATE" class="col-12" filter="intval" size="1" default="1">
+            <option value="0.5"></option>
+            <option value="1"></option>
+            <option value="1.5"></option>
+            <option value="2"></option>
+            <option value="2.5"></option>
+            <option value="3"></option>
+            <option value="3.5"></option>
+            <option value="4"></option>
+            <option value="4.5"></option>
+            <option value="5"></option>
+        </field>
+        <field name="rates" type="jdratings" label="COM_JOMDIRECTORY_REVIEW_RATES"/>
+        <field name="recommended" type="jdrecommended" label="COM_JOMDIRECTORY_REVIEW_RECOMMENDED"/>
+        <field name="text" type="textarea" label="COM_JOMDIRECTORY_REVIEW_DESCR" class="form-control" rows="5" required="true"/>
+        <field name="email" type="text" label="COM_JOMDIRECTORY_REVIEW_EMAIL" class="form-control" required="true"/>
+
+        <field name="terms" type="checkbox" label="COM_JOMDIRECTORY_REVIEW_TERMS" class="" required="true" default="0"/>
+        <!--        <field
+                    name="captchareviews"
+                    type="captcha"
+                    label="COM_JOMDIRECTORY_REVIEWS_CAPTCHA"
+                    validate="captcha"  namespace="reviewsjd"
+                    id="captchareviews"
+                />        -->
+        <field name="content_id" type="hidden"/>
+    </fieldset>
+</form>
+

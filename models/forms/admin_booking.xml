@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset addfieldpath="/administrator/components/com_categories/models/fields">
+        <field
+                name="id"
+                type="text"
+                label="JGLOBAL_FIELD_ID_LABEL"
+                description="JGLOBAL_FIELD_ID_DESC"
+                default="0"
+                readonly="true"
+                class="readonly form-control"
+        />
+
+        <field
+                name="state"
+                type="radio"
+                label="COM_JOMDIRECTORY_ORDER_STATUS"
+                description=""
+                class="btn-group"
+                default="0"
+        >
+            <option value="WAIT">COM_JOMDIRECTORY_STATE_WAIT</option>
+            <option value="PAID">COM_JOMDIRECTORY_STATE_PAID</option>
+            <option value="CANCELED">COM_JOMDIRECTORY_STATE_CANCELED</option>
+        </field>
+
+
+        <field
+                name="price"
+                type="text"
+                label="COM_JOMDIRECTORY_PRODUCT_PRICE"
+                description=""
+                class="required form-control"
+                required="true"
+        />
+
+
+        <field
+                name="users_id"
+                type="user"
+                label="COM_JOMDIRECTORY_USER"
+                description=""
+                class="form-control"
+        />
+
+        <field name="items_id" type="jdlisting" label="COM_JOMDIRECTORY_BRAND" class="custom-select" />
+
+        <field name="service_id" type="jdservice" label="COM_JOMDIRECTORY_SERVICE" class="custom-select" />
+
+
+        <field
+                name="date_reservation"
+                type="calendar"
+                label="COM_JOMDIRECTORY_DATE_RESERVATION"
+                description=""
+                class="form-control"
+                format="%Y-%m-%d"
+                filter="user_utc"
+        />
+        <field name="hour_from" type="list" label="COM_JOMDIRECTORY_HOUR_FROM"
+               description="" class="custom-select"
+               filter="intval" size="1" default="0"
+        >
+            <option value="0">00:00</option>
+            <option value="1">01:00</option>
+            <option value="2">02:00</option>
+            <option value="3">03:00</option>
+            <option value="4">04:00</option>
+            <option value="5">05:00</option>
+            <option value="6">06:00</option>
+            <option value="7">07:00</option>
+            <option value="8">08:00</option>
+            <option value="9">09:00</option>
+            <option value="10">10:00</option>
+            <option value="11">11:00</option>
+            <option value="12">12:00</option>
+            <option value="13">13:00</option>
+            <option value="14">14:00</option>
+            <option value="15">15:00</option>
+            <option value="16">16:00</option>
+            <option value="17">17:00</option>
+            <option value="18">18:00</option>
+            <option value="19">19:00</option>
+            <option value="20">20:00</option>
+            <option value="21">21:00</option>
+            <option value="22">22:00</option>
+            <option value="23">23:00</option>
+            <option value="24">24:00</option>
+        </field>
+        <field name="hour_to" type="list" label="COM_JOMDIRECTORY_HOUR_TO"
+               description="" class="custom-select"
+               filter="intval" size="1" default="0"
+        >
+            <option value="0">00:00</option>
+            <option value="1">01:00</option>
+            <option value="2">02:00</option>
+            <option value="3">03:00</option>
+            <option value="4">04:00</option>
+            <option value="5">05:00</option>
+            <option value="6">06:00</option>
+            <option value="7">07:00</option>
+            <option value="8">08:00</option>
+            <option value="9">09:00</option>
+            <option value="10">10:00</option>
+            <option value="11">11:00</option>
+            <option value="12">12:00</option>
+            <option value="13">13:00</option>
+            <option value="14">14:00</option>
+            <option value="15">15:00</option>
+            <option value="16">16:00</option>
+            <option value="17">17:00</option>
+            <option value="18">18:00</option>
+            <option value="19">19:00</option>
+            <option value="20">20:00</option>
+            <option value="21">21:00</option>
+            <option value="22">22:00</option>
+            <option value="23">23:00</option>
+            <option value="24">24:00</option>
+        </field>
+    </fieldset>
+</form>

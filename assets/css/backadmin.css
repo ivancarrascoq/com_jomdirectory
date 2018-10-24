@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+/* Main toolbars */
+div.toolbar-list {
+	float: right;
+	text-align: right;
+	padding: 0;
+}
+
+div.toolbar-list ul {
+	margin: 0;
+	padding: 0;
+}
+
+div.toolbar-list li {
+	padding: 1px 1px 3px 4px;
+	text-align: center;
+	color: #666;
+	height: 48px;
+	list-style: none;
+	float: left;
+}
+
+div.toolbar-list li.spacer {
+	width: 10px;
+}
+
+div.toolbar-list li.divider {
+	border-right: 1px solid #c7c7c7;
+	width: 2px;
+}
+
+div.toolbar-list span {
+	float: none;
+	width: 32px;
+	height: 32px;
+	margin: 0 auto;
+	display: block;
+}
+
+div.toolbar-list a {
+	display: block;
+	float: left;
+	white-space: nowrap;
+	border: 0px solid #F4F4F4;
+	padding: 1px 5px;
+	cursor: pointer;
+}
+
+div.toolbar-list a:hover,
+div.toolbar-list a:focus,
+div.toolbar-list a:active {
+	border-left: 1px solid #eee;
+	border-top: 1px solid #eee;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	text-decoration: none;
+	color: #0B55C4;
+}
+
+
+
+/* -- JGRID STYLES ----------------------------- */
+
+/* Admin backend grid table elements */
+a.jgrid:hover {	text-decoration: none;}
+
+
+/* -- TOOLBAR ICON STYLES ----------------------------- */
+.icon-32-send						{	background-image: url(toolbar/icon-32-send.png);	}
+.icon-32-delete						{	background-image: url(toolbar/icon-32-delete.png);	}
+.icon-32-help						{	background-image: url(toolbar/icon-32-help.png);	}
+.icon-32-cancel						{	background-image: url(toolbar/icon-32-cancel.png);	}
+.icon-32-checkin					{	background-image: url(toolbar/icon-32-checkin.png);	}
+.icon-32-options					{	background-image: url(toolbar/icon-32-config.png);	}
+.icon-32-apply						{	background-image: url(toolbar/icon-32-apply.png);	}
+.icon-32-back						{	background-image: url(toolbar/icon-32-back.png);	}
+.icon-32-export						{	background-image: url(toolbar/icon-32-export.png);	}
+.icon-32-forward					{	background-image: url(toolbar/icon-32-forward.png);	}
+.icon-32-save						{	background-image: url(toolbar/icon-32-save.png);	}
+.icon-32-edit						{	background-image: url(toolbar/icon-32-edit.png);	}
+.icon-32-copy						{	background-image: url(toolbar/icon-32-copy.png);	}
+.icon-32-move						{	background-image: url(toolbar/icon-32-move.png);	}
+.icon-32-new						{	background-image: url(toolbar/icon-32-new.png);	}
+.icon-32-upload						{	background-image: url(toolbar/icon-32-upload.png);	}
+.icon-32-assign						{	background-image: url(toolbar/icon-32-publish.png);	}
+.icon-32-html						{	background-image: url(toolbar/icon-32-html.png);	}
+.icon-32-css						{	background-image: url(toolbar/icon-32-css.png);	}
+.icon-32-menus						{	background-image: url(toolbar/icon-32-menu.png);	}
+.icon-32-publish					{	background-image: url(toolbar/icon-32-publish.png);	}
+.icon-32-unblock					{	background-image: url(toolbar/icon-32-unblock.png);	}
+.icon-32-unpublish					{	background-image: url(toolbar/icon-32-unpublish.png);	}
+.icon-32-restore					{	background-image: url(toolbar/icon-32-revert.png);	}
+.icon-32-trash						{	background-image: url(toolbar/icon-32-trash.png);	}
+.icon-32-archive					{	background-image: url(toolbar/icon-32-archive.png);	}
+.icon-32-unarchive					{	background-image: url(toolbar/icon-32-unarchive.png);	}
+.icon-32-preview					{	background-image: url(toolbar/icon-32-preview.png);	}
+.icon-32-default					{	background-image: url(toolbar/icon-32-default.png);	}
+.icon-32-refresh					{	background-image: url(toolbar/icon-32-refresh.png);	}
+.icon-32-save-new					{	background-image: url(toolbar/icon-32-save-new.png);	}
+.icon-32-save-copy					{	background-image: url(toolbar/icon-32-save-copy.png);	}
+.icon-32-error						{	background-image: url(toolbar/icon-32-error.png);	}
+.icon-32-new-style					{	background-image: url(toolbar/icon-32-new-style.png);	}
+.icon-32-delete-style				{	background-image: url(toolbar/icon-32-delete-style.png);	}
+.icon-32-purge						{	background-image: url(toolbar/icon-32-purge.png);	}
+.icon-32-remove						{	background-image: url(toolbar/icon-32-remove.png);	}
+.icon-32-featured					{	background-image: url(toolbar/icon-32-featured.png);	}
+.icon-32-stats						{	background-image: url(toolbar/icon-32-stats.png);	}
+.icon-32-print						{	background-image: url(toolbar/icon-32-print.png);	}
+.toolbar-inactive					{	background-position: 0 32px;  }
+
+a.jgrid:hover {	text-decoration: none;}
+
+.jgrid span.state {
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+}
+
+.jgrid span.text 					{ display:none; }
+.jgrid span.publish					{ background-image: url(admin/tick.png); }
+.jgrid span.unpublish				{ background-image: url(admin/publish_x.png); }
+.jgrid span.archive 					{ background-image: url(menu/icon-16-archive.png); }
+.jgrid span.trash					{ background-image: url(menu/icon-16-trash.png); }
+.jgrid span.default					{ background-image: url(menu/icon-16-default.png); }
+.jgrid span.notdefault				{ background-image: url(menu/icon-16-notdefault.png); }
+.jgrid span.checkedout				{ background-image: url(admin/checked_out.png); }
+.jgrid span.downarrow				{ background-image: url(admin/downarrow.png); }
+.jgrid span.downarrow_disabled		{ background-image: url(admin/downarrow0.png); background-position: 0 -12px; }
+.jgrid span.uparrow					{ background-image: url(admin/uparrow.png); }
+.jgrid span.uparrow_disabled			{ background-image: url(admin/uparrow0.png); background-position: 0 -12px; }
+.jgrid span.published				{ background-image: url(admin/publish_g.png); }
+.jgrid span.expired					{ background-image: url(admin/publish_r.png); }
+.jgrid span.pending					{ background-image: url(admin/publish_y.png); }
+.jgrid span.warning					{ background-image: url(admin/publish_y.png); }
+.jgrid span.protected				{ background-image: url(admin/icon-16-protected.png); }
+
+
+.jd-button-front a, #jform_jdfile .article {    
+    min-width: 120px;
+    background-image: none !important;
+    border: medium none;
+    box-shadow: none;
+    cursor: pointer;
+    display: inline-block;
+    font: 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-bottom: 0;
+    padding: 7px 12px 9px;
+    text-align: center;
+    text-shadow: none;
+    transition: all 0.12s linear 0s !important;
+    vertical-align: middle;
+    border-radius: 4px;
+    background-color: #F35958;
+    color: #FFFFFF;
+}
