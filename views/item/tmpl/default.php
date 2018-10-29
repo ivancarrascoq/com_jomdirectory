@@ -48,7 +48,7 @@ if (!empty($this->item->images->intro)) {
                                     <span class="h5"><?php echo round($this->item->reviews->rate) ?>/5</span>
                                 </div>
                                 <a href="#reviews" class="d-block">
-                                    <span class="reviews-count mt-1"><?php echo $this->item->reviews->count ?><?php echo JText::_('COM_JOMDIRECTORY_SCORE_REVIEWS'); ?></span>
+                                    <span class="reviews-count mt-1"><?php echo $this->item->reviews->count ?> <?php echo JText::_('COM_JOMDIRECTORY_SCORE_REVIEWS'); ?></span>
                                 </a>
 							<?php else: ?>
                                 <span class="jd-score-reviews">(<?php echo JText::_('COM_JOMDIRECTORY_SCORE_NOREVIEWS'); ?>)</span>
@@ -371,3 +371,15 @@ if (!empty($this->item->images->intro)) {
     <script src="//www.google.com/recaptcha/api.js?onload=CaptchaCallback&render=explicit" async defer></script>
 <?php endif; ?>
 
+<!--ivanx-->
+<script type="text/javascript">
+  $(window).load(function(){
+      document.styleSheets[17].disabled = true;
+/*	var i;
+	for (i=0; i<30; i++){
+	      var a = document.styleSheets[i].href;
+	      alert(a + "--->" + i);
+	};
+*/
+    })
+</script>
