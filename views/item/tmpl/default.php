@@ -374,7 +374,7 @@ if (!empty($this->item->images->intro)) {
 <!--ivanx-->
 <script type="text/javascript">
   $(window).load(function(){
-      document.styleSheets[17].disabled = true;
+      document.styleSheets[19].disabled = true;
 /*	var i;
 	for (i=0; i<30; i++){
 	      var a = document.styleSheets[i].href;
